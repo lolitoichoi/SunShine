@@ -1,0 +1,232 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+    font-family: 'Great Vibes', cursive;
+}
+/* CSS */
+.bold-text {
+    font-weight: bold;
+  }
+  
+
+input[type="button"] {
+    padding: 10px;
+    background-color: #2a2a2a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="buttonADD"] {
+    padding: 10px;
+    max-width: 55px;
+    background-color: #0d6efd;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+input[type="text"] {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border: 1px solid #08b8cb;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="file"],
+select {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #08b8cb;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #08b8cb;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="button"]:hover {
+    background-color: #213b57;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th,
+table td {
+    padding: 10px;
+    border: 1px solid #3f3b6e;
+    text-align: center;
+}
+
+thead {
+    background-color: #1f3459;
+    color: #fff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+tbody tr:hover {
+    background-color: #ffffff;
+}
+
+.form-contro {
+    width: 20px;
+    height: 50px;
+}
+
+input[type="buttonUP"] {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    width: 110px;
+    text-align: center;
+}
+
+
+input[type="buttonUP"]:hover {
+    background-color: #45a049; 
+}
+
+
+.navbar-brand,
+.nav-item input[type="button"] {
+    padding: 10px 20px;
+    margin-right: 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navbar-brand {
+    background-color: #2a2a2a;
+}
+
+.nav-item .man-button {
+    background-color: #007bff;
+}
+
+.nav-item .women-button {
+    background-color: #ff69b4;
+}
+
+.navbar-brand:hover,
+.man-button:hover,
+.women-button:hover {
+    background-color: #213b57;
+}
+
+.edit-btn,
+.delete-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.edit-btn {
+    background-color: #19037a;
+}
+
+.delete-btn {
+    background-color: #e90ce9;
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+    filter: brightness(110%);
+}
+
+.detail-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #0d6efd;
+    /* Màu cho nút Detail */
+}
+
+
+.detail-btn:hover {
+    filter: brightness(110%);
+}
+
+.banner h3 {
+    font-size: 47px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Great Vibes', cursive;
+    padding: 10px;
+}
+
+
+.banner h3::before,
+.banner h3::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: #08b8cb;
+    overflow: hidden;
+    animation: animate 20s linear infinite;
+    transform: translateX(-100%);
+}
+
+
+@keyframes animate {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    50%,
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+
+.banner h3::before {
+    animation-delay: 1s;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <script src="./js.bootstrap.min.js"></script>
+  <script src="./js.jquery.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+  <link rel="stylesheet" href="./main.css" />
+  <title>Shop quần áo</title>
+</head>
+<body style="background-color: rgb(249, 249, 249)">
+  <nav class="navbar navbar-expand-sm ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="javascript:void(0)">Louis Vuitton</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <input type="button" value="Trang Chủ" onclick="showAllProducts()" />
+        </li>
+          <li class="nav-item">
+            <input type="button" class="man-button" value="Man" onclick="Man()" />
+          </li>
+          <li class="nav-item">
+            <input type="button" class="women-button" value="Women" onclick="Women()" />
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input id="searchInput" class="form-control me-2" type="text" placeholder="Search" onkeyup="search()">
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="progress">
+    <div class="progress-bar" style="width:100%"></div>
+  </div>
+  <div class="banner">
+    <h3 data-text="Shop Thời Trang">Shop Thời Trang</h3>
+  </div>
+  <br>
+
+
+  <div >
+    <div>
+      <h2 class="bold-text">Add Product</h2>
+    </div>
+    <input type="number" id="id" placeholder="ID" />
+    <input type="text" id="name" placeholder="Name Product " />
+    <input type="text" id="img" name="image" placeholder="URL Image" />    
+    <input type="number" id="price" placeholder=" Price" />
+    <input type="number" id="quantity" placeholder=" Quantity" />
+   
+   
+    <input type="text" id="detail" placeholder="Detail" />
+    <select id="Select">
+      <option value="man">Man</option>
+      <option value="women">Women</option>
+    </select>
+    <input type="buttonADD" value="ADD" onclick="createProduct()" />
+  </div>
+
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th>ID</th>
+          <th>Name Product</th>
+          <th>Images Product</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Update</th> 
+          <th>Delete</th> 
+          <th>Detail Product</th> 
+        </tr>
+      </thead>
+  
+      <tbody id="tbl"></tbody>
+    </table>
+    <div id="modal" style="display: none;"></div>
+  <div id="editFormMan" style="display: none">
+    <input type="hidden" id="editIndexMan" />
+    <h2>Edit Product</h2>
+    <input type="text" id="editProductName" placeholder="Product Name" />
+    <input type="text" id="editProductImage" placeholder="Image" />
+    <input type="text" id="editProductPrice" placeholder="Price" />
+    <input type="text" id="editProductQuantity" placeholder="Quantity" />
+    <input type="text"  id="editProductDetail"  placeholder="Detail">
+    <input type="buttonUP" value="UPDATE" onclick="updateProduct()" />
+  </div>
+
+  <div id="editFormWomen" style="display: none">
+    <input type="hidden" id="editIndexWomen" />
+    <h2>Edit Product</h2>
+    <input type="text" id="editProductNameWomen" placeholder="Product Name" />
+    <input type="text" id="editProductImageWomen" placeholder="Image" />
+    <input type="text" id="editProductPriceWomen" placeholder="Price" />
+    <input type="text" id="editProductQuantityWomen" placeholder="Quantity" />
+    <input type="text" id="editProductDetailWomen"  placeholder="Detail">
+    <input type="buttonUP" value="UPDATE" onclick="updateProductWomen()" />
+  </div>
+    <script src="./thoitrang.js"></script>
+</body> 
+</html>
+
